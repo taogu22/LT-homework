@@ -1,0 +1,5 @@
+*.xlsx
+*.docx
+*.pdf
+__pycache__/
+每股股利dps.txt
