@@ -125,7 +125,7 @@ def grouping(myList):
     ordering = ordering[listSize - count : ] # ordering of indexes with nonzero values.
     # return(len(ordering) == count)
     group = [ordering[0 : groupSize], ordering[groupSize : groupSize*2], ordering[groupSize * 2 : groupSize * 3 + remainder], ordering[groupSize * 3 + remainder : groupSize * 4 + remainder], ordering[groupSize * 4 + remainder : ]]    # group = [] # maintain a list whose 5 elements are lists of the indexes of the stocks in the corresponding group.
-    group.reverse()
+    group.reverse() # put the larger groups in the front
     return group
 
 # listS = transpose(fillList(bmList))[0]
